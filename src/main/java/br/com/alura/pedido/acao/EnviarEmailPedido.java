@@ -1,8 +1,10 @@
 package br.com.alura.pedido.acao;
 
-public class EnviarEmailPedido {
+import br.com.alura.pedido.Pedido;
 
-    public void executar(){
+public class EnviarEmailPedido implements AcaoAposGerarPedido{
+
+    public void executarAcao(Pedido pedido){
         System.out.println("Enviar email com dados do pedido");
     }
 

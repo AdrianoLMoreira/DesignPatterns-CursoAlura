@@ -168,6 +168,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/pedido/acao/AcaoAposGerarPedido.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/pedido/acao/EnviarEmail.java">
           <value>
             <set />
