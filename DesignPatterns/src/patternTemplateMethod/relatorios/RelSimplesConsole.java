@@ -12,7 +12,6 @@ public class RelSimplesConsole extends GeradorDeRelatorios {
 		System.out.println(conteudo);
 	}
 	
-	private double totalProdutos = 0;
 	
 	@Override
 	protected String gerarConteudo(List<Produto> produtos) {

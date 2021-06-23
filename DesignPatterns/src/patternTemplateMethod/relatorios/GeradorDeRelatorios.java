@@ -8,6 +8,8 @@ import patternTemplateMethod.model.Produto;
 
 public abstract class GeradorDeRelatorios {
 
+	public double totalProdutos = 0;
+	
 	public final void gerarRelatorio(List<Produto> listaProduto) {
 		String cabecalho = this.gerarCabecalho();
 		String conteudo = this.gerarConteudo(listaProduto);

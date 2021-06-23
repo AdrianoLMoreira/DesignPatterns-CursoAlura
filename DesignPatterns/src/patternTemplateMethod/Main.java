@@ -7,6 +7,7 @@ import java.util.List;
 import patternTemplateMethod.model.Produto;
 import patternTemplateMethod.relatorios.GeradorDeRelatorios;
 import patternTemplateMethod.relatorios.RelSimplesConsole;
+import patternTemplateMethod.relatorios.RelatorioAnaliticoGUI;
 
 public class Main {
 
@@ -21,5 +22,8 @@ public class Main {
 		
 		GeradorDeRelatorios relSimples = new RelSimplesConsole();
 		relSimples.gerarRelatorio(listaProdutos);
+		
+		GeradorDeRelatorios relAnalitic = new RelatorioAnaliticoGUI();
+		relAnalitic.gerarRelatorio(listaProdutos);
 	}
 }
