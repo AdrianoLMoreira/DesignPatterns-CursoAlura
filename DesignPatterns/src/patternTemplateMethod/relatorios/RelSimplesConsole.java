@@ -8,7 +8,8 @@ public class RelSimplesConsole extends GeradorDeRelatorios {
 
 	@Override
 	protected void gerarVisualizacao(String cabecalho, String conteudo) {
-		
+		System.out.println(cabecalho);
+		System.out.println(conteudo);
 	}
 	
 	private double totalProdutos = 0;
@@ -21,7 +22,7 @@ public class RelSimplesConsole extends GeradorDeRelatorios {
 		produtos.forEach(p -> totalProdutos += p.getPreco());
 		
 		conteudo.append("QTD VENDIDA: "+ produtos.size());
-		conteudo.append("TOTAL VENDIDO: "+ totalProdutos);
+		conteudo.append("\nTOTAL VENDIDO: "+ totalProdutos);
 		return conteudo.toString();
 		
 	}
